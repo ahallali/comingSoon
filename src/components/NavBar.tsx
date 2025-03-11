@@ -5,7 +5,9 @@ import logo from "@/assets/logo.png";
 export default function NavBar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-30 px-4 py-6">
-        <div className="flex justify-center items-center">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
+        {/* Logo */}
+        <div className="flex justify-center items-center mb-2">
           <Link href="/" className="relative">
             <Image 
               src={logo}
@@ -17,6 +19,7 @@ export default function NavBar() {
             />
           </Link>
         </div>
+      </div>
     </nav>
   );
 }
