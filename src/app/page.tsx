@@ -62,7 +62,7 @@ export default function Home() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="inline-block"
             >
-              {letter}
+               {letter === " " ? "\u00A0" : letter}
             </motion.span>
           ))}
         </motion.span>
@@ -80,7 +80,7 @@ export default function Home() {
             Something amazing is in the works
           </p>
           <a
-            href="mailto:contact@yansoft.ma"
+            href="mailto:Contact@arena.ma"
             className="bg-white rounded-full z-20 w-fit text-black mt-8 px-6 py-3 hover:bg-black hover:text-white transition-colors duration-300"
           >
             Contact Us
