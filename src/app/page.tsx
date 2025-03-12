@@ -41,7 +41,7 @@ export default function Home() {
 
       <NavBar />
 
-      <AuroraBackground >
+      <AuroraBackground className={"bg-white"} >
         <div className="relative flex flex-col gap-2 items-center justify-center px-4">
         <h1 className="text-3xl md:text-7xl font-black text-white text-center z-20">
         <motion.span
