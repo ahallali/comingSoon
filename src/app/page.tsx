@@ -87,12 +87,6 @@ export default function Home() {
           </a>
         </div>
       </AuroraBackground>
-        <a
-          href="mailto:contact@arenaproperty.ma"
-          className="bg-white rounded-lg w-fit text-black mt-6 px-6 py-3 hover:bg-black hover:text-white transition-colors duration-300"
-        >
-          Contact Us
-        </a>
 
       <footer className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30 px-4">
         <div className="flex justify-center items-center">
