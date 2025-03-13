@@ -60,7 +60,7 @@ export default function Home() {
                 visible: { opacity: 1, scale: 1 },
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="inline-block"
+              style={{ fontFamily: "Poppins, sans-serif", fontWeight: 300 }}
             >
                {letter === " " ? "\u00A0" : letter}
             </motion.span>
@@ -76,12 +76,12 @@ export default function Home() {
         </motion.span>
       </h1>
 
-          <p className="font-bold md:text-2xl text-neutral-200 py-2 z-20">
+          <p className="font-bold poppins-light md:text-2xl text-neutral-200  py-2 z-20">
             Something amazing is in the works
           </p>
           <a
             href="mailto:Contact@arena.ma"
-            className="bg-white rounded-full z-20 w-fit text-black mt-8 px-6 py-3 hover:bg-black hover:text-white transition-colors duration-300"
+            className="bg-white rounded-lg poppings-light z-20 w-fit text-black mt-8 px-6 py-3 hover:bg-black hover:text-white transition-colors duration-300"
           >
             Contact Us
           </a>
