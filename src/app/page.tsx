@@ -1,13 +1,14 @@
 'use client'
 import Image from "next/image";
 import backgroundImage from "@/assets/background.jpg";
-import NavBar from "@/components/NavBar";
 import { AuroraBackground } from "@/components/aurora-background";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import logo from "@/assets/Arena-logo.png";
 
 export default function Home() {
-  const text = "COMING SOON";
+  const text = "SITE EN MAINTENANCE";
   const dots = "...";
   const dotControls = useAnimation();
   const [textAnimationComplete, setTextAnimationComplete] = useState(false);
@@ -39,11 +40,10 @@ export default function Home() {
 
       <div className="absolute inset-0 bg-black/30 z-10" />
 
-      <NavBar />
 
       <AuroraBackground className={"bg-white"} >
         <div className="relative flex flex-col gap-2 items-center justify-center px-4">
-        <h1 className="text-3xl md:text-7xl font-black text-white text-center z-20">
+        <h1 className="text-3xl md:text-4xl  text-white text-center z-20">
         <motion.span
           initial="hidden"
           whileInView="visible"
@@ -77,16 +77,37 @@ export default function Home() {
       </h1>
 
           <p className="font-bold poppins-light md:text-2xl text-neutral-200  py-2 z-20">
-            Something amazing is in the works
+           SITE UNDER MAINTENANCE
           </p>
           <a
-            href="mailto:Contact@arena.ma"
+            href="mailto:contact@arenaproprety.ma"
             className="bg-white rounded-lg poppings-light z-20 w-fit text-black mt-8 px-6 py-3 hover:bg-black hover:text-white transition-colors duration-300"
           >
             Contact Us
           </a>
         </div>
       </AuroraBackground>
+        <a
+          href="mailto:contact@arenaproperty.ma"
+          className="bg-white rounded-lg w-fit text-black mt-6 px-6 py-3 hover:bg-black hover:text-white transition-colors duration-300"
+        >
+          Contact Us
+        </a>
+
+      <footer className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30 px-4">
+        <div className="flex justify-center items-center">
+          <Link href="/" className="relative">
+            <Image
+              src={logo}
+              alt="Logo"
+              width={200}
+              height={100}
+              className="h-auto w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] mb-4"
+              priority
+            />
+          </Link>
+        </div>
+      </footer>
     </main>
   );
 }
